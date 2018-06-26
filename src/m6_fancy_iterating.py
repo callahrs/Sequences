@@ -47,7 +47,10 @@ def main():
     #     4. When satisfied with your work, move onto the next test.
     # ------------------------------------------------------------------
 
-    run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
+                                      sequence4)
+
+
 #     run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
@@ -56,7 +59,8 @@ def main():
 #     run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4)
 
 
-def run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4):
+def run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
+                                      sequence4):
     """ Tests the   print_all_items_forwards   function. """
     print()
     print('***********************************************************')
@@ -91,7 +95,8 @@ def run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4
     print_all_items_forwards(sequence4)
 
 
-def run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4):
+def run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
+                                       sequence4):
     """ Tests the   print_all_items_backwards   function. """
     print()
     print('***********************************************************')
@@ -126,7 +131,8 @@ def run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence
     print_all_items_backwards(sequence4)
 
 
-def run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4):
+def run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
+                                        sequence4):
     print()
     print('***********************************************************')
     print('Testing the   print_items_at_odd_indices   function.')
@@ -169,7 +175,8 @@ def run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequenc
     print_items_at_odd_indices(sequence4)
 
 
-def run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4):
+def run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
+                                        sequence4):
     print()
     print('***********************************************************')
     print('Testing the   print_items_in_second_half   function.')
@@ -241,7 +248,8 @@ def run_test_print_items_that_are_bigger_than_5():
     print_items_that_are_bigger_than_5([5, 5, 5])
 
 
-def run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4):
+def run_test_print_items_that_are_strings(sequence1, sequence2, sequence3,
+                                          sequence4):
     print()
     print('***********************************************************')
     print('Testing the   print_items_that_are_strings   function.')
@@ -290,7 +298,8 @@ def run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, seque
     print_items_that_are_strings(sequence4)
 
 
-def run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4):
+def run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3,
+                                               sequence4):
     print()
     print('***********************************************************')
     print('Testing the   print_items_that_are_odd_integers   function.')
@@ -510,6 +519,7 @@ def print_items_that_are_odd_integers(sequence):
     # IMPORTANT:  The  type  function returns  int  if its argument
     #   is an integer.  Note that   int   has NO quotes surrounding it.
     # ------------------------------------------------------------------
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
