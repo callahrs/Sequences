@@ -13,7 +13,7 @@ is different from:
   -- LOOKING only at items AT even-numbered indices.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Riley Callahan.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -22,7 +22,7 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     # ------------------------------------------------------------------
-    # TODO: 2.  EXAMINE the  4  sequences immediately below
+    # Done: 2.  EXAMINE the  4  sequences immediately below
     #   this comment, and READ the instructions that follows them.
     #
     # When you have examined the 4 sequences below and understand how
