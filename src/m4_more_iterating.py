@@ -9,7 +9,7 @@ It also demonstrates using an ORACLE and/or PROBABILITY THEORY
 in testing and BOUNDARY (EDGE) TESTING.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Riley Callahan.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import random
@@ -33,7 +33,7 @@ def run_test_sum_sequence():
     print('--------------------------------------------------')
 
     # ------------------------------------------------------------------
-    # TODO: 2. READ the COMMENTS and CODE in this function,
+    # Done: 2. READ the COMMENTS and CODE in this function,
     #  asking questions as needed.
     #
     #   When you believe that you understand:
@@ -212,6 +212,10 @@ def sum_sequence(sequence):
     #      -- The TESTING code above does use   built_ins.sum
     #         as an ORACLE in TESTING this function, however.
     # ------------------------------------------------------------------
+    sum = 0
+    for k in range(len(sequence)):
+        sum = sum + sequence[k]
+    return sum
 
 
 def run_test_count_items_bigger_than():
@@ -343,6 +347,24 @@ def run_test_count_items_bigger_than():
 
     # TO DO 4 (continued):  Add your 2 ADDITIONAL tests here:
 
+    # Test 9:
+    sequence = [45, 84, 32, 70, -10, 40]
+    threshold = 10
+    expected = 5
+    actual = count_items_bigger_than(sequence, threshold)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
+
+    # Test 10:
+    sequence = [4, 84, 32, 20, -1, 40]
+    threshold = 0
+    expected = 5
+    actual = count_items_bigger_than(sequence, threshold)
+    print()
+    print('Test 10 expected:', expected)
+    print('       actual:  ', actual)
+
 
 def count_items_bigger_than(numbers, threshold):
     """
@@ -381,6 +403,11 @@ def count_items_bigger_than(numbers, threshold):
     # TODO: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+    count = 0
+    for k in range(len(numbers)):
+        if numbers[k] > threshold:
+            count = count + 1
+    return count
 
 
 def run_test_count_positive_sines():
@@ -483,6 +510,13 @@ def run_test_count_positive_sines():
 
     # TO DO 6 (continued):  Add your 1 ADDITIONAL test here:
 
+    # Test 11:
+    expected = 2
+    actual = count_positive_sines([3, 6, 8])
+    print()
+    print('Test 11 expected:', expected)
+    print('       actual:  ', actual)
+
 
 def count_positive_sines(numbers):
     """
@@ -511,6 +545,11 @@ def count_positive_sines(numbers):
     # TODO: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+    count = 0
+    for k in range(len(numbers)):
+        if math.sin(numbers[k]) > 0:
+            count = count + 1
+    return count
 
 
 def run_test_sum_first_n():
@@ -587,6 +626,20 @@ def run_test_sum_first_n():
 
     # TO DO 8 (continued):  Add your 2 ADDITIONAL tests here:
 
+    # Test 8:
+    expected = 88
+    actual = sum_first_n([48, -10, 50, 5], 3)
+    print()
+    print('Test 8 expected:', expected)
+    print('       actual:  ', actual)
+
+    # Test 9:
+    expected = 38
+    actual = sum_first_n([48, -10, 50, 5], 2)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
+
 
 def sum_first_n(numbers, n):
     """
@@ -619,8 +672,11 @@ def sum_first_n(numbers, n):
     #      -- The TESTING code above does use   built_ins.sum
     #         as an ORACLE in TESTING this function, however.
     # ------------------------------------------------------------------
-
-# ----------------------------------------------------------------------
-# Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
-main()
+    sum = 0
+    for k in range(n):
+        sum = sum + numbers[k]
+    return sum
+    # ----------------------------------------------------------------------
+    # Calls  main  to start the ball rolling.
+    # ----------------------------------------------------------------------
+    main()
